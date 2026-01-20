@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://23m4pgru3dx6"]
 
-[ext_resource type="Script" uid="uid://d2qq46767fjq0" path="res://Character/dude.gd" id="1_vwjsc"]
+[ext_resource type="Script" uid="uid://d2qq46767fjq0" path="res://Scripts/dude.gd" id="1_vwjsc"]
 [ext_resource type="Texture2D" uid="uid://cn1nu3d6gypo3" path="res://FREE/6. Character Animations 32p/Anim_Robot_Walk1_v1.1_spritesheet.png" id="2_vwjsc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c48f4"]
