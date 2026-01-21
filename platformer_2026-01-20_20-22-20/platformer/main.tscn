@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpmrvciu2q13f"]
+
+[ext_resource type="PackedScene" uid="uid://daplml0xhrhdh" path="res://Levels/world.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://23m4pgru3dx6" path="res://Character/dude.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(-2, 0)
+
+[node name="World" parent="." instance=ExtResource("1_0xm2m")]
+position = Vector2(2, 0)
+
+[node name="Dude" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(17, 280)
