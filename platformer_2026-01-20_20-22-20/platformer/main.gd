@@ -1,15 +1,12 @@
-extends Camera2D
-
+extends Node2D # peanits
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	
+	ProjectSettings.set_setting("physics/2d/default_gravity_vector", Vector2(0, -1))
+	print("gravityUP")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
-
-func _on_camera_change_area_body_entered(body: CharacterBody2D) -> void:
-	make_current()
