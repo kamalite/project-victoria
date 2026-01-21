@@ -13,7 +13,10 @@ config_version=5
 config/name="Platformer"
 run/main_scene="uid://bpmrvciu2q13f"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://Character/icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [rendering]
 
