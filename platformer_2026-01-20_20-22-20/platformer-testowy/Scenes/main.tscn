@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpmrvciu2q13f"]
+[gd_scene load_steps=4 format=3 uid="uid://bpmrvciu2q13f"]
 
 [ext_resource type="Script" uid="uid://cu5iuq81ci877" path="res://Scripts/main.gd" id="1_kry3j"]
 [ext_resource type="PackedScene" uid="uid://23m4pgru3dx6" path="res://Character/dude.tscn" id="2_h2yge"]
-[ext_resource type="PackedScene" uid="uid://ltajurpn4oi4" path="res://Scenes/anty_gravity_area.tscn" id="3_8gbba"]
 [ext_resource type="Script" uid="uid://c140if2kskbde" path="res://Scripts/camera_2d.gd" id="4_jjvhh"]
 
 [node name="Main" type="Node2D"]
@@ -11,14 +10,8 @@ script = ExtResource("1_kry3j")
 [node name="Dude" parent="." instance=ExtResource("2_h2yge")]
 position = Vector2(53, 371)
 
-[node name="AntyGravityArea" parent="." instance=ExtResource("3_8gbba")]
-position = Vector2(619, 199)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 script = ExtResource("4_jjvhh")
-
-[connection signal="body_entered" from="AntyGravityArea" to="Dude" method="_on_anty_gravity_area_body_entered"]
-[connection signal="body_exited" from="AntyGravityArea" to="Dude" method="_on_anty_gravity_area_body_exited"]
