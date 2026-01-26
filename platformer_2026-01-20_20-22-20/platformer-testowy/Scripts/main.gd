@@ -11,16 +11,22 @@ var instance4 = Lvl4.instantiate()
 var SpawnRight = Vector2(768, 0)
 var SpawnDown = Vector2(0, 432)
 var SpawnLeft = Vector2(-768, 0)
+var BottomLeftEntranceRooms = [instance2, instance3]
+var TopLeftEntraneRooms = [instance4]
+
 
 func _ready() -> void:
 	
 	add_child(instance1)
-	add_child(instance2)
-	instance2.global_position = instance1.global_position + SpawnRight
-	add_child(instance4)
-	instance4.global_position = instance2.global_position + SpawnDown
-	add_child(instance3)
-	instance3.global_position = instance4.global_position + SpawnLeft
+	var SecondRoom = BottomLeftEntranceRooms[randi()% BottomLeftEntranceRooms.size()]
+	add_child(SecondRoom)
+	BottomLeftEntranceRooms.erase(SecondRoom)
+	SecondRoom.global_position = instance1.global_position + SpawnRight
+	var ThirdRoom = TopLeftEntraneRooms[randi()% TopLeftEntraneRooms.size()]
+	add_child(ThirdRoom)
+	TopLeftEntraneRooms.erase(ThirdRoom)
+	ThirdRoom.global_position = SecondRoom.global_position + SpawnRight
+	var FourthRoom = 1
 	
 func _process(delta: float) -> void:
 	pass
