@@ -11,9 +11,8 @@ var instance4 = Lvl4.instantiate()
 var SpawnRight = Vector2(768, 0)
 var SpawnDown = Vector2(0, 432)
 var SpawnLeft = Vector2(-768, 0)
-var BottomLeftEntranceRooms = [instance2, instance3]
+var BottomLeftEntranceRooms = [instance3, instance3]
 var TopLeftEntraneRooms = [instance4]
-
 
 func _ready() -> void:
 	
@@ -26,7 +25,6 @@ func _ready() -> void:
 	add_child(ThirdRoom)
 	TopLeftEntraneRooms.erase(ThirdRoom)
 	ThirdRoom.global_position = SecondRoom.global_position + SpawnRight
-	var FourthRoom = 1
 	
 func _process(delta: float) -> void:
 	pass

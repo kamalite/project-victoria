@@ -1,17 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpmrvciu2q13f"]
+[gd_scene load_steps=5 format=3 uid="uid://bpmrvciu2q13f"]
 
 [ext_resource type="Script" uid="uid://cu5iuq81ci877" path="res://Scripts/main.gd" id="1_kry3j"]
-[ext_resource type="PackedScene" uid="uid://23m4pgru3dx6" path="res://Character/dude.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://8mvdpgj6x1e6" path="res://Scenes/Levels/level_template.tscn" id="2_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://d0bljtuk2iudq" path="res://Scenes/player_character.tscn" id="3_8gbba"]
 [ext_resource type="Script" uid="uid://c140if2kskbde" path="res://Scripts/camera_2d.gd" id="4_jjvhh"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_kry3j")
 
-[node name="Dude" parent="." instance=ExtResource("2_h2yge")]
-position = Vector2(53, 371)
+[node name="LevelTemplate" parent="." instance=ExtResource("2_jjvhh")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 script = ExtResource("4_jjvhh")
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("3_8gbba")]
+position = Vector2(60, 370)
