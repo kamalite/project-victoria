@@ -1,9 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://d0bljtuk2iudq"]
+[gd_scene load_steps=41 format=3 uid="uid://d0bljtuk2iudq"]
 
 [ext_resource type="Script" uid="uid://d2qq46767fjq0" path="res://Scripts/dude.gd" id="1_cmdk4"]
 [ext_resource type="Texture2D" uid="uid://bsdw5qrcs3nqd" path="res://Character/cyborg_platformer/cyber prisoner idle-Sheet.png" id="1_qcwfp"]
 [ext_resource type="Texture2D" uid="uid://c1n8m4o2lq4kr" path="res://Character/cyborg_platformer/cyber prisoner run cycle-Sheet.png" id="3_o0f8b"]
 [ext_resource type="Texture2D" uid="uid://pv5wtf1mu24x" path="res://Character/cyborg_platformer/cyber prisoner death-Sheet.png" id="3_wko77"]
+[ext_resource type="Texture2D" uid="uid://c53cegw8vr8nf" path="res://Character/cyborg_platformer/cyber prisoner jump cycle -Sheet.png" id="4_pb3n0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cmdk4"]
 radius = 9.0
@@ -63,6 +64,50 @@ region = Rect2(192, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcng2"]
 atlas = ExtResource("1_qcwfp")
 region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0dhu"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdrer"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6p7y"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e05f7"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5y83"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ck4qn"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uchij"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0oa0h"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfjhv"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijhcx"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5oli8"]
+atlas = ExtResource("4_pb3n0")
+region = Rect2(320, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q5hbr"]
 atlas = ExtResource("3_o0f8b")
@@ -152,6 +197,44 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_v0dhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdrer")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6p7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e05f7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5y83")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ck4qn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uchij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0oa0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfjhv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijhcx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5oli8")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_q5hbr")
 }, {
 "duration": 1.0,
@@ -187,9 +270,7 @@ script = ExtResource("1_cmdk4")
 position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_cmdk4")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="PlayerAnimatedSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_q5hbr")
-animation = &"Death"
+animation = &"Jump"
 autoplay = "Idle"
-frame = 5
-frame_progress = 1.0

@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cjbkbhuos86wm"]
+
+[ext_resource type="Shader" uid="uid://uxlhrchk2sry" path="res://shaders/checkpoint_shader.gdshader" id="1_ytd1p"]
+
+[sub_resource type="Gradient" id="Gradient_ytd1p"]
+colors = PackedColorArray(0, 1, 1, 0.78431374, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_45mn4"]
+gradient = SubResource("Gradient_ytd1p")
+
+[resource]
+shader = ExtResource("1_ytd1p")
+shader_parameter/noise = SubResource("GradientTexture2D_45mn4")
+shader_parameter/scroll = Vector2(1.2, 1)

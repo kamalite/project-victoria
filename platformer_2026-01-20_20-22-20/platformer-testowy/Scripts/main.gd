@@ -26,5 +26,5 @@ func _ready() -> void:
 	TopLeftEntraneRooms.erase(ThirdRoom)
 	ThirdRoom.global_position = SecondRoom.global_position + SpawnRight
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

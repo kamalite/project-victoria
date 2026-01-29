@@ -275,15 +275,15 @@ size = Vector2(22, 62)
 [node name="LaserDoor" type="Node2D"]
 script = ExtResource("1_0gn2x")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="LaserDoorAnimatedSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_eq0ab")
 animation = &"Idle"
 autoplay = "Idle"
 frame_progress = 0.3883955
 
-[node name="Area2D" type="Area2D" parent="AnimatedSprite2D"]
+[node name="LaserDoorArea2D" type="Area2D" parent="LaserDoorAnimatedSprite"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D"]
+[node name="LaserDoorCollision" type="CollisionShape2D" parent="LaserDoorAnimatedSprite/LaserDoorArea2D"]
 shape = SubResource("RectangleShape2D_4fj61")
 
-[connection signal="body_entered" from="AnimatedSprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="LaserDoorAnimatedSprite/LaserDoorArea2D" to="." method="_on_area_2d_body_entered"]
