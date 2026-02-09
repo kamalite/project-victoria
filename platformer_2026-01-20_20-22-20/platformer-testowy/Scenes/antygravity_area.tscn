@@ -12,8 +12,8 @@ script = ExtResource("1_gy1bb")
 
 [node name="AntygravityField" type="Sprite2D" parent="."]
 material = ExtResource("1_1s2yy")
-position = Vector2(-2, -53.5)
-scale = Vector2(1.03125, 1.8359375)
+position = Vector2(-41.5, -43.000004)
+scale = Vector2(1.6484375, 1.9999999)
 texture = ExtResource("2_gy1bb")
 
 [node name="AntygravityArea2D" type="Area2D" parent="AntygravityField"]
@@ -22,6 +22,7 @@ gravity_point_center = Vector2(0, -1)
 gravity_direction = Vector2(0, -1)
 
 [node name="AntygravityFieldCollision" type="CollisionShape2D" parent="AntygravityField/AntygravityArea2D"]
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_tkk28")
 
 [connection signal="body_entered" from="AntygravityField/AntygravityArea2D" to="." method="_on_antygravity_area_2d_body_entered"]

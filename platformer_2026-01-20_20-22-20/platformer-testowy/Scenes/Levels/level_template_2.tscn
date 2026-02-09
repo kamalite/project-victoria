@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://dgu4v6h82chl7"]
+[gd_scene load_steps=8 format=4 uid="uid://dgu4v6h82chl7"]
 
 [ext_resource type="Texture2D" uid="uid://d4muiny8rt628" path="res://Assets/5. Industrial Tileset - Starter Pack 32p/1_Industrial_Tileset_1.png" id="1_qn26g"]
 [ext_resource type="Script" uid="uid://ggbppdtxxmrm" path="res://Scripts/level_template.gd" id="1_vcyfn"]
+[ext_resource type="PackedScene" uid="uid://dmk18ckhh3he" path="res://Scenes/laser_door.tscn" id="3_gkoc2"]
+[ext_resource type="PackedScene" uid="uid://5uohcujbriqb" path="res://Scenes/controll_panel.tscn" id="4_xfvhe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wks4m"]
 texture = ExtResource("1_qn26g")
@@ -186,5 +188,12 @@ tile_set = SubResource("TileSet_nqhii")
 position = Vector2(383.5, 216)
 shape = SubResource("RectangleShape2D_yhrl8")
 debug_color = Color(0, 0.6156863, 0.6117647, 0.24313726)
+
+[node name="LaserDoor" parent="." instance=ExtResource("3_gkoc2")]
+position = Vector2(608, 416)
+rotation = 1.5707964
+
+[node name="ControlPanel" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(690, 385)
 
 [connection signal="body_entered" from="PlayerDetectionArea" to="." method="_on_player_detection_area_body_entered"]
