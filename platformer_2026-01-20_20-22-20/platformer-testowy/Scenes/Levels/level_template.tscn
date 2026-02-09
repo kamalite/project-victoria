@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://8mvdpgj6x1e6"]
+[gd_scene load_steps=11 format=4 uid="uid://8mvdpgj6x1e6"]
 
 [ext_resource type="Texture2D" uid="uid://d4muiny8rt628" path="res://Assets/5. Industrial Tileset - Starter Pack 32p/1_Industrial_Tileset_1.png" id="1_5a1yd"]
 [ext_resource type="Script" uid="uid://ggbppdtxxmrm" path="res://Scripts/level_template.gd" id="1_nqhii"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cpcm10v1dg4o0" path="res://Scenes/checkpoint.tscn" id="5_6epvh"]
 [ext_resource type="PackedScene" uid="uid://5uohcujbriqb" path="res://Scenes/controll_panel.tscn" id="5_ebu0d"]
 [ext_resource type="PackedScene" uid="uid://bc575vt8cqd2x" path="res://Scenes/antygravity_area.tscn" id="7_aibml"]
+[ext_resource type="PackedScene" uid="uid://uf5bfrf1tj5x" path="res://Scenes/laser_spikes.tscn" id="7_tvne3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wks4m"]
 texture = ExtResource("1_5a1yd")
@@ -203,5 +204,12 @@ scale = Vector2(0.34621716, 0.31815347)
 
 [node name="ControlPanel" parent="." instance=ExtResource("5_ebu0d")]
 position = Vector2(666, 384)
+
+[node name="LaserSpikes" parent="." instance=ExtResource("7_tvne3")]
+position = Vector2(383, 385)
+
+[node name="LaserSpikes2" parent="." instance=ExtResource("7_tvne3")]
+position = Vector2(418, 385)
+SpikesNumber = 2
 
 [connection signal="body_entered" from="PlayerDetectionArea" to="." method="_on_player_detection_area_body_entered"]
