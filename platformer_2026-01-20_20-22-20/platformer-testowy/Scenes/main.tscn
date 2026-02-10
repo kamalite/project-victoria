@@ -9,6 +9,7 @@
 script = ExtResource("1_kry3j")
 
 [node name="LevelTemplate" parent="." instance=ExtResource("2_jjvhh")]
+position = Vector2(1, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
