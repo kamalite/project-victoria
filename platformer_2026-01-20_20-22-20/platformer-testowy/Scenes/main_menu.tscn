@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://sdky5ddcxcu5"]
 
 [ext_resource type="Script" uid="uid://dgniuta4pkc2l" path="res://Scripts/main_menu.gd" id="1_28flt"]
-[ext_resource type="Texture2D" uid="uid://bcufsvv5mx3uv" path="res://Tło.png" id="2_48xlc"]
+[ext_resource type="Texture2D" uid="uid://box5rvx0emyb5" path="res://Assets/Tło2.png" id="2_1ehe0"]
 [ext_resource type="FontFile" uid="uid://dy8avuys2cwye" path="res://Fonts/DIN Bold.otf" id="3_1ehe0"]
 
 [node name="MainMenu" type="Control"]
@@ -16,15 +16,15 @@ script = ExtResource("1_28flt")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(576, 323.99997)
 scale = Vector2(0.44999996, 0.44999996)
-texture = ExtResource("2_48xlc")
+texture = ExtResource("2_1ehe0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.110652775
-anchor_top = 0.34835806
-anchor_right = 0.18554771
-anchor_bottom = 0.4351852
+anchor_left = 0.071590275
+anchor_top = 0.34064198
+anchor_right = 0.14648522
+anchor_bottom = 0.42746913
 offset_left = -0.47200394
 offset_top = -12.736008
 offset_right = 8.0
@@ -34,19 +34,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.99215686, 0.99215686, 0.99215686, 1)
+theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
 theme_override_fonts/font = ExtResource("3_1ehe0")
 text = "Start"
 
 [node name="Opcje" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.99215686, 0.99215686, 0.99215686, 1)
+theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
 theme_override_fonts/font = ExtResource("3_1ehe0")
 text = "Opcje"
 
 [node name="Wyjdź" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.99215686, 0.99215686, 0.99215686, 1)
+theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
 theme_override_fonts/font = ExtResource("3_1ehe0")
 text = "Wyjdź"
 
