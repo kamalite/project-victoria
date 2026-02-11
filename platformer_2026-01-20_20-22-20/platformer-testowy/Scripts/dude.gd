@@ -82,9 +82,6 @@ func handle_footsteps_audio():
 		else:
 			if footsteps_player.playing:
 				footsteps_player.stop()
-			
-		if footsteps_player.playing:
-			footsteps_player.stop()
 		
 func death() -> void:
 	can_control = false
