@@ -224,7 +224,7 @@ rotation = 3.1415927
 SpikesNumber = 1
 
 [node name="checkpoint" parent="." instance=ExtResource("5_x6ccw")]
-position = Vector2(46.841343, 368.09622)
-scale = Vector2(0.51412165, 0.23189598)
+position = Vector2(46.75932, 367.99457)
+scale = Vector2(0.49928, 0.23061435)
 
 [connection signal="body_entered" from="PlayerDetectionArea" to="." method="_on_player_detection_area_body_entered"]

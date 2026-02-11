@@ -196,6 +196,10 @@ debug_color = Color(0, 0.6156863, 0.6117647, 0.24313726)
 position = Vector2(620, 88)
 scale = Vector2(0.29742327, 0.32712728)
 
+[node name="AntygravityField" parent="AntygravityArea" index="0"]
+position = Vector2(-43.239994, -71.837494)
+scale = Vector2(1.62125, 3.0807965)
+
 [node name="LaserDoor" parent="." instance=ExtResource("4_r33bk")]
 position = Vector2(608, 16)
 rotation = 1.5707961
