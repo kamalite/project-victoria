@@ -1,6 +1,6 @@
 extends Node2D
 
-var Lvl1 = preload("res://Scenes/Levels/level_templatej1.tscn")
+var Lvl1 = preload("res://Scenes/Levels/level_template_2.tscn")
 var Lvl2 = preload("res://Scenes/Levels/level_template_2.tscn")
 var Lvl3 = preload("res://Scenes/Levels/level_template_3.tscn")
 var Lvl4 = preload("res://Scenes/Levels/level_template_4.tscn")
