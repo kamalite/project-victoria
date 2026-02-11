@@ -1,8 +1,10 @@
-[gd_scene load_steps=46 format=3 uid="uid://5uohcujbriqb"]
+[gd_scene load_steps=48 format=3 uid="uid://5uohcujbriqb"]
 
 [ext_resource type="Texture2D" uid="uid://cmru0pgx3ewv8" path="res://Assets/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_deactivate.png" id="1_imix8"]
 [ext_resource type="Script" uid="uid://cj5j4tr61j23a" path="res://Scripts/controll_panel.gd" id="1_mcwf7"]
 [ext_resource type="Texture2D" uid="uid://dybppvtsbs7xg" path="res://Assets/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_idle.png" id="2_yw1jb"]
+[ext_resource type="AudioStream" uid="uid://dy86octh43jhy" path="res://Sound/button14.wav" id="4_t6j6d"]
+[ext_resource type="AudioStream" uid="uid://621icjl2gryx" path="res://Sound/invulnerable_off.wav" id="5_5qhkj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ha00a"]
 atlas = ExtResource("1_imix8")
@@ -313,5 +315,12 @@ autoplay = "Idle"
 [node name="ControlPanelCollision" type="CollisionShape2D" parent="ControlPanelAnimatedSprite/ControlPanelArea2D"]
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_imix8")
+
+[node name="ButtonAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_t6j6d")
+
+[node name="TurnOff" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_5qhkj")
+volume_db = -4.0
 
 [connection signal="body_entered" from="ControlPanelAnimatedSprite/ControlPanelArea2D" to="." method="_on_control_panel_area_2d_body_entered"]

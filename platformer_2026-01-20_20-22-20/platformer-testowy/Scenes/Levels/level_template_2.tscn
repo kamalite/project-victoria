@@ -192,99 +192,6 @@ position = Vector2(383.5, 216)
 shape = SubResource("RectangleShape2D_yhrl8")
 debug_color = Color(0, 0.6156863, 0.6117647, 0.24313726)
 
-[node name="kolce" type="Node" parent="."]
-
-[node name="LaserSpikes6" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(192, 211)
-SpikesNumber = 6
-
-[node name="LaserSpikes11" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(666, 48)
-rotation = 3.1415927
-SpikesNumber = 67
-
-[node name="LaserSpikes9" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(495, 95)
-SpikesNumber = 67
-
-[node name="LaserSpikes10" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(531, 96)
-rotation = 4.712389
-SpikesNumber = 67
-
-[node name="LaserSpikes13" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(621, 96)
-rotation = 1.5707964
-SpikesNumber = 67
-
-[node name="LaserSpikes12" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(627, 176)
-rotation = 4.712389
-SpikesNumber = 67
-
-[node name="LaserSpikes21" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(628, 272)
-rotation = 4.712389
-SpikesNumber = 67
-
-[node name="LaserSpikes7" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(336, 162)
-SpikesNumber = 67
-
-[node name="LaserSpikes" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(132, 384)
-SpikesNumber = 67
-
-[node name="LaserSpikes2" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(242, 384)
-SpikesNumber = 67
-
-[node name="LaserSpikes8" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(224, 125)
-rotation = -3.1415925
-SpikesNumber = 67
-
-[node name="LaserSpikes3" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(192, 332)
-rotation = -3.1415925
-SpikesNumber = 67
-
-[node name="LaserSpikes4" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(368, 289)
-SpikesNumber = 67
-
-[node name="LaserSpikes14" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(528, 384)
-SpikesNumber = 67
-
-[node name="LaserSpikes15" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(560, 384)
-SpikesNumber = 8
-
-[node name="LaserSpikes16" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(592, 384)
-SpikesNumber = 8
-
-[node name="LaserSpikes17" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(624, 384)
-SpikesNumber = 67
-
-[node name="LaserSpikes18" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(656, 384)
-SpikesNumber = 8
-
-[node name="LaserSpikes19" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(688, 384)
-SpikesNumber = 8
-
-[node name="LaserSpikes20" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(720, 384)
-SpikesNumber = 67
-
-[node name="LaserSpikes5" parent="kolce" instance=ExtResource("4_xfvhe")]
-position = Vector2(339, 384)
-SpikesNumber = 67
-
 [node name="AntygravityArea" parent="." instance=ExtResource("5_7nwqi")]
 position = Vector2(355, 232)
 
@@ -334,6 +241,97 @@ ControlPannelNumber = 8
 [node name="LaserDoor" parent="." instance=ExtResource("7_08ove")]
 position = Vector2(752, 336)
 DoorNumber = 8
+
+[node name="LaserSpikes6" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(192, 211)
+SpikesNumber = 6
+
+[node name="LaserSpikes11" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(666, 48)
+rotation = -3.1415925
+SpikesNumber = 67
+
+[node name="LaserSpikes9" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(495, 95)
+SpikesNumber = 67
+
+[node name="LaserSpikes10" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(531, 96)
+rotation = -1.5707964
+SpikesNumber = 67
+
+[node name="LaserSpikes13" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(621, 96)
+rotation = 1.5707964
+SpikesNumber = 67
+
+[node name="LaserSpikes12" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(627, 176)
+rotation = -1.5707964
+SpikesNumber = 67
+
+[node name="LaserSpikes21" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(628, 272)
+rotation = -1.5707964
+SpikesNumber = 67
+
+[node name="LaserSpikes7" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(336, 162)
+SpikesNumber = 67
+
+[node name="LaserSpikes" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(132, 384)
+SpikesNumber = 67
+
+[node name="LaserSpikes2" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(242, 384)
+SpikesNumber = 67
+
+[node name="LaserSpikes8" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(224, 125)
+rotation = -3.1415925
+SpikesNumber = 67
+
+[node name="LaserSpikes3" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(192, 332)
+rotation = -3.1415925
+SpikesNumber = 67
+
+[node name="LaserSpikes4" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(368, 289)
+SpikesNumber = 67
+
+[node name="LaserSpikes14" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(528, 384)
+SpikesNumber = 67
+
+[node name="LaserSpikes15" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(560, 384)
+SpikesNumber = 8
+
+[node name="LaserSpikes16" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(592, 384)
+SpikesNumber = 8
+
+[node name="LaserSpikes17" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(624, 384)
+SpikesNumber = 67
+
+[node name="LaserSpikes18" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(656, 384)
+SpikesNumber = 8
+
+[node name="LaserSpikes19" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(688, 384)
+SpikesNumber = 8
+
+[node name="LaserSpikes20" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(720, 384)
+SpikesNumber = 67
+
+[node name="LaserSpikes5" parent="." instance=ExtResource("4_xfvhe")]
+position = Vector2(339, 384)
+SpikesNumber = 67
 
 [connection signal="body_entered" from="PlayerDetectionArea" to="." method="_on_player_detection_area_body_entered"]
 

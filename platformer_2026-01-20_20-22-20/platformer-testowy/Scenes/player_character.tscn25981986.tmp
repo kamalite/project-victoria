@@ -1,17 +1,10 @@
-[gd_scene load_steps=49 format=3 uid="uid://d0bljtuk2iudq"]
+[gd_scene load_steps=41 format=3 uid="uid://d0bljtuk2iudq"]
 
 [ext_resource type="Script" uid="uid://d2qq46767fjq0" path="res://Scripts/dude.gd" id="1_cmdk4"]
 [ext_resource type="Texture2D" uid="uid://bsdw5qrcs3nqd" path="res://Character/cyborg_platformer/cyber prisoner idle-Sheet.png" id="1_qcwfp"]
 [ext_resource type="Texture2D" uid="uid://c1n8m4o2lq4kr" path="res://Character/cyborg_platformer/cyber prisoner run cycle-Sheet.png" id="3_o0f8b"]
-[ext_resource type="AudioStream" uid="uid://dykqqucws7oxs" path="res://Sound/crit_received1.wav" id="3_q5hbr"]
 [ext_resource type="Texture2D" uid="uid://pv5wtf1mu24x" path="res://Character/cyborg_platformer/cyber prisoner death-Sheet.png" id="3_wko77"]
 [ext_resource type="Texture2D" uid="uid://c53cegw8vr8nf" path="res://Character/cyborg_platformer/cyber prisoner jump cycle -Sheet.png" id="4_pb3n0"]
-[ext_resource type="AudioStream" uid="uid://clbb75258igwm" path="res://Sound/metal1.wav" id="6_ons1q"]
-[ext_resource type="AudioStream" uid="uid://6jnk6ex06ji7" path="res://Sound/metal2.wav" id="7_fcng2"]
-[ext_resource type="AudioStream" uid="uid://c2yjjbyeltess" path="res://Sound/metal3.wav" id="8_q5hbr"]
-[ext_resource type="AudioStream" uid="uid://ihl0g38q376h" path="res://Sound/metal4.wav" id="9_w775p"]
-[ext_resource type="AudioStream" uid="uid://dkdb3jvrlycnq" path="res://Sound/jump_ability_long_01.wav" id="10_4pbxa"]
-[ext_resource type="AudioStream" uid="uid://c34fat1321xot" path="res://Sound/recharged.wav" id="10_q5hbr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cmdk4"]
 radius = 9.0
@@ -270,13 +263,6 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4pbxa"]
-streams_count = 4
-stream_0/stream = ExtResource("6_ons1q")
-stream_1/stream = ExtResource("7_fcng2")
-stream_2/stream = ExtResource("8_q5hbr")
-stream_3/stream = ExtResource("9_w775p")
-
 [node name="PlayerCharacter" type="CharacterBody2D"]
 script = ExtResource("1_cmdk4")
 
@@ -286,19 +272,5 @@ shape = SubResource("CapsuleShape2D_cmdk4")
 
 [node name="PlayerAnimatedSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_q5hbr")
-animation = &"Run"
+animation = &"Jump"
 autoplay = "Idle"
-
-[node name="FootstepsAudio" type="AudioStreamPlayer2D" parent="."]
-stream = SubResource("AudioStreamRandomizer_4pbxa")
-
-[node name="JumpAudio" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("10_4pbxa")
-volume_db = -10.0
-
-[node name="RespawnAudio" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("10_q5hbr")
-
-[node name="DeathAudio" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_q5hbr")
-volume_db = -4.0

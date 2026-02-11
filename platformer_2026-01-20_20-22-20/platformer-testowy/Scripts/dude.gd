@@ -1,8 +1,13 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
 @onready var animated_sprite = $PlayerAnimatedSprite
+@onready var footsteps_player = $FootstepsAudio
+@onready var jump_player = $JumpAudio
+@onready var respawn_audio = $RespawnAudio
+@onready var death_audio = $DeathAudio
+
+@export var SPEED = 300.0
+@export var JUMP_VELOCITY = -400.0
 var can_control: bool = true
 
 func _ready() -> void:
@@ -23,11 +28,13 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		animated_sprite.play("Jump")
+		jump_player.play()
 	elif animated_sprite.animation == "Jump" and is_on_floor():
 		animated_sprite.play("Idle")
 	if Input.is_action_just_pressed("ui_accept") and is_on_ceiling():
 		velocity.y = -JUMP_VELOCITY
 		animated_sprite.play("Jump")
+		jump_player.play()
 	elif animated_sprite.animation == "Jump" and is_on_ceiling():
 		animated_sprite.play("Idle")
 		
@@ -51,8 +58,23 @@ func _physics_process(delta: float) -> void:
  
 	move_and_slide()
 	
+	handle_footsteps_audio()
+	
+func handle_footsteps_audio():
+	if is_on_floor():
+		if velocity.length() > 0:
+			if not footsteps_player.playing:
+				footsteps_player.play()
+		else:
+			if footsteps_player.playing:
+				footsteps_player.stop()
+	else:
+		if footsteps_player.playing:
+			footsteps_player.stop()
+		
 func death() -> void:
 	can_control = false
+	death_audio.play()
 	animated_sprite.play("Death")
 	await get_tree().create_timer(1).timeout
 	reset_player()
@@ -61,6 +83,7 @@ func reset_player() -> void:
 	global_position = Global_script.checkpoint_pos
 	can_control = true
 	animated_sprite.play("Idle")
+	respawn_audio.play()
 	
 func rotate_character_up() -> void:
 	rotation_degrees = 180
