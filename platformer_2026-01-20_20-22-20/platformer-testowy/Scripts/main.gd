@@ -39,6 +39,6 @@ func _ready() -> void:
 	SixthRoom.global_position = FifthRoom.global_position + SpawnUp
 	var SeventhRoom = instance2
 	add_child(SeventhRoom)
-	SeventhRoom.global_position = SixthRoom.global_position + SpawnUp
+	SeventhRoom.global_position = SixthRoom.global_position + SpawnRight
 func _process(_delta: float) -> void:
 	pass
