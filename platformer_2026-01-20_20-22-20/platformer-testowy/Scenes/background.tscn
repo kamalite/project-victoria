@@ -1,0 +1,127 @@
+[gd_scene load_steps=20 format=3 uid="uid://ncwl4gyea65x"]
+
+[ext_resource type="Texture2D" uid="uid://dg0a5sstj6j2s" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 4/1.png" id="1_84a6y"]
+[ext_resource type="Texture2D" uid="uid://uh40jai05hbc" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/1.png" id="1_owiv4"]
+[ext_resource type="Texture2D" uid="uid://bgqog872ukrwx" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/2.png" id="2_84a6y"]
+[ext_resource type="Texture2D" uid="uid://dmcjhekihfjx5" path="res://Assets/Free Pixel Art Futuristic City/PNG/2-backround.png" id="2_jn2ok"]
+[ext_resource type="Texture2D" uid="uid://cvppjepjm3bdj" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/3.png" id="3_fkdu8"]
+[ext_resource type="Texture2D" uid="uid://dbo1fq68p7sa7" path="res://Assets/Free Pixel Art Futuristic City/PNG/3-backround.png" id="3_jieww"]
+[ext_resource type="Texture2D" uid="uid://cvnbefqcv1bkp" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 4/2.png" id="3_yfwmw"]
+[ext_resource type="Texture2D" uid="uid://077vc4oy7vdd" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/4.png" id="4_kx0mk"]
+[ext_resource type="Texture2D" uid="uid://51naf1g7evhm" path="res://Assets/Free Pixel Art Futuristic City/PNG/4b-backround--traffic-lights.png" id="4_owiv4"]
+[ext_resource type="Texture2D" uid="uid://wecbft3dtt61" path="res://Assets/Free Pixel Art Futuristic City/PNG/4backround-traffic-lights.png" id="5_84a6y"]
+[ext_resource type="Texture2D" uid="uid://dn5ox01u7guot" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 4/3.png" id="5_237w7"]
+[ext_resource type="Texture2D" uid="uid://do1ofm4a6f63i" path="res://Assets/Free Pixel Art Futuristic City/PNG/5-backround.png" id="6_fkdu8"]
+[ext_resource type="Texture2D" uid="uid://8m8cc2vwl0af" path="res://Assets/Free Pixel Art Futuristic City/PNG/6-backround-train.png" id="7_kx0mk"]
+[ext_resource type="Texture2D" uid="uid://3wphqowx86i8" path="res://Assets/Free Pixel Art Futuristic City/PNG/9-middleground-tower.png" id="8_yfwmw"]
+[ext_resource type="Texture2D" uid="uid://ev36fqgxssmx" path="res://Assets/Free Pixel Art Futuristic City/PNG/10-middleground-lights-tower.png" id="9_237w7"]
+[ext_resource type="Texture2D" uid="uid://ci33ahyp3a2nc" path="res://Assets/Free Pixel Art Futuristic City/PNG/11-middleground.png" id="10_hr31u"]
+[ext_resource type="Texture2D" uid="uid://dysb1byukbb03" path="res://Assets/Free Pixel Art Futuristic City/PNG/7-backround.png" id="11_slbr4"]
+[ext_resource type="Texture2D" uid="uid://crxy7uuqoctqq" path="res://Assets/Free Pixel Art Futuristic City/PNG/8-backround.png" id="12_l0guq"]
+[ext_resource type="Texture2D" uid="uid://phc4hsxmcpb5" path="res://Assets/Free Pixel Art Futuristic City/PNG/12-middleground.png" id="13_jxjft"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Parallax2D5" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-134, -5)
+repeat_size = Vector2(576, 0)
+repeat_times = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5"]
+position = Vector2(0, -268)
+texture = ExtResource("1_84a6y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
+texture = ExtResource("1_owiv4")
+
+[node name="Parallax2D7" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-134, -5)
+repeat_size = Vector2(576, 0)
+autoscroll = Vector2(-6, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D7"]
+texture = ExtResource("3_yfwmw")
+offset = Vector2(0, -256)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D7"]
+texture = ExtResource("2_84a6y")
+
+[node name="Parallax2D8" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-134, -5)
+repeat_size = Vector2(576, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D8"]
+position = Vector2(4, -260)
+texture = ExtResource("5_237w7")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Parallax2D8"]
+texture = ExtResource("3_fkdu8")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-134, -102)
+repeat_size = Vector2(576, 0)
+autoscroll = Vector2(-18, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("4_kx0mk")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-35, 116)
+repeat_size = Vector2(512, 0)
+autoscroll = Vector2(-4, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D2"]
+texture = ExtResource("2_jn2ok")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Parallax2D2"]
+texture = ExtResource("3_jieww")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Parallax2D2/Sprite2D3"]
+texture = ExtResource("4_owiv4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2/Sprite2D3"]
+texture = ExtResource("5_84a6y")
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-35, 116)
+repeat_size = Vector2(512, 0)
+autoscroll = Vector2(-12, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("6_fkdu8")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("7_kx0mk")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("8_yfwmw")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Parallax2D3/Sprite2D6"]
+texture = ExtResource("9_237w7")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-35, 116)
+repeat_size = Vector2(512, 0)
+autoscroll = Vector2(-20, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="Sprite2D8" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("10_hr31u")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("11_slbr4")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("12_l0guq")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("13_jxjft")
