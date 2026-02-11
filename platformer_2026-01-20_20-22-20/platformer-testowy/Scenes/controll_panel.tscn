@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cj5j4tr61j23a" path="res://Scripts/controll_panel.gd" id="1_mcwf7"]
 [ext_resource type="Texture2D" uid="uid://dybppvtsbs7xg" path="res://Assets/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_idle.png" id="2_yw1jb"]
 [ext_resource type="AudioStream" uid="uid://dy86octh43jhy" path="res://Sound/button14.wav" id="4_t6j6d"]
-[ext_resource type="AudioStream" uid="uid://621icjl2gryx" path="res://Sound/invulnerable_off.wav" id="5_5qhkj"]
+[ext_resource type="AudioStream" uid="uid://ca7rdtwwbihbe" path="res://Sound/rmine_blip1.wav" id="5_5qhkj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ha00a"]
 atlas = ExtResource("1_imix8")
@@ -321,6 +321,6 @@ stream = ExtResource("4_t6j6d")
 
 [node name="TurnOff" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_5qhkj")
-volume_db = -4.0
+volume_db = -10.0
 
 [connection signal="body_entered" from="ControlPanelAnimatedSprite/ControlPanelArea2D" to="." method="_on_control_panel_area_2d_body_entered"]
