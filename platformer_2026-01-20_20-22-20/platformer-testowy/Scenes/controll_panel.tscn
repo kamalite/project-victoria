@@ -305,10 +305,8 @@ script = ExtResource("1_mcwf7")
 
 [node name="ControlPanelAnimatedSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ol6bs")
-animation = &"Deactivate"
+animation = &"Idle"
 autoplay = "Idle"
-frame = 19
-frame_progress = 1.0
 
 [node name="ControlPanelArea2D" type="Area2D" parent="ControlPanelAnimatedSprite"]
 
