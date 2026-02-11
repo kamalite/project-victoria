@@ -10,7 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://6jnk6ex06ji7" path="res://Sound/metal2.wav" id="7_fcng2"]
 [ext_resource type="AudioStream" uid="uid://c2yjjbyeltess" path="res://Sound/metal3.wav" id="8_q5hbr"]
 [ext_resource type="AudioStream" uid="uid://ihl0g38q376h" path="res://Sound/metal4.wav" id="9_w775p"]
-[ext_resource type="AudioStream" uid="uid://dkdb3jvrlycnq" path="res://Sound/jump_ability_long_01.wav" id="10_4pbxa"]
+[ext_resource type="AudioStream" uid="uid://djo6jtrok4np7" path="res://Sound/freesound_community-jumping_1-6452.mp3" id="10_4pbxa"]
 [ext_resource type="AudioStream" uid="uid://c34fat1321xot" path="res://Sound/recharged.wav" id="10_q5hbr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cmdk4"]
@@ -294,7 +294,6 @@ stream = SubResource("AudioStreamRandomizer_4pbxa")
 
 [node name="JumpAudio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_4pbxa")
-volume_db = -10.0
 
 [node name="RespawnAudio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_q5hbr")
