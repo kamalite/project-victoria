@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://sdky5ddcxcu5"]
+
+[ext_resource type="Script" uid="uid://dgniuta4pkc2l" path="res://Scripts/main_menu.gd" id="1_28flt"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_28flt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.036000002
+anchor_top = 0.282
+anchor_right = 0.11089493
+anchor_bottom = 0.36882716
+offset_left = -0.47200394
+offset_top = -12.736008
+offset_right = 8.0
+offset_bottom = 32.0
+scale = Vector2(2.7018197, 2.7018197)
+metadata/_edit_use_anchors_ = true
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Opcje" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Opcje"
+
+[node name="Wyjdź" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Wyjdź"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Opcje" to="." method="_on_opcje_pressed"]
+[connection signal="pressed" from="VBoxContainer/Wyjdź" to="." method="_on_wyjdź_pressed"]
