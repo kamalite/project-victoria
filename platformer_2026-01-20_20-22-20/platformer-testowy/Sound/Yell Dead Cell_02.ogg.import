@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddexa6c34n4n1"
+path="res://.godot/imported/Yell Dead Cell_02.ogg-c92b405883b868d33529ca349b1b632e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sound/Yell Dead Cell_02.ogg"
+dest_files=["res://.godot/imported/Yell Dead Cell_02.ogg-c92b405883b868d33529ca349b1b632e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

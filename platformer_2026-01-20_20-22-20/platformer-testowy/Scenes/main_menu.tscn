@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://sdky5ddcxcu5"]
+[gd_scene load_steps=3 format=3 uid="uid://sdky5ddcxcu5"]
 
 [ext_resource type="Script" uid="uid://dgniuta4pkc2l" path="res://Scripts/main_menu.gd" id="1_28flt"]
+[ext_resource type="Texture2D" uid="uid://bcufsvv5mx3uv" path="res://Tło.png" id="2_48xlc"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -11,13 +12,18 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_28flt")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 323.99997)
+scale = Vector2(0.44999996, 0.44999996)
+texture = ExtResource("2_48xlc")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.036000002
-anchor_top = 0.282
-anchor_right = 0.11089493
-anchor_bottom = 0.36882716
+anchor_left = 0.047284726
+anchor_top = 0.30669138
+anchor_right = 0.12217966
+anchor_bottom = 0.3935185
 offset_left = -0.47200394
 offset_top = -12.736008
 offset_right = 8.0

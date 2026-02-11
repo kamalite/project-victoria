@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://8mvdpgj6x1e6" path="res://Scenes/Levels/level_template.tscn" id="2_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://d0bljtuk2iudq" path="res://Scenes/player_character.tscn" id="3_8gbba"]
 [ext_resource type="Script" uid="uid://c140if2kskbde" path="res://Scripts/camera_2d.gd" id="4_jjvhh"]
-[ext_resource type="AudioStream" uid="uid://cov18iitpxl0h" path="res://Sound/Yell Dead Cell_01.ogg" id="5_kry3j"]
+[ext_resource type="AudioStream" uid="uid://ddexa6c34n4n1" path="res://Sound/Yell Dead Cell_02.ogg" id="5_kry3j"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_kry3j")
@@ -23,6 +23,6 @@ position = Vector2(60, 370)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_kry3j")
-volume_db = -5.0
+volume_db = -10.0
 autoplay = true
 parameters/looping = true
