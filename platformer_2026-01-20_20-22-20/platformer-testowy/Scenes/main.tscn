@@ -15,7 +15,3 @@ script = ExtResource("4_jjvhh")
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_8gbba")]
 position = Vector2(60, 370)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-volume_db = -10.0
-autoplay = true
