@@ -1,11 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpmrvciu2q13f"]
+[gd_scene load_steps=6 format=3 uid="uid://bpmrvciu2q13f"]
 
 [ext_resource type="Script" uid="uid://cu5iuq81ci877" path="res://Scripts/main.gd" id="1_kry3j"]
 [ext_resource type="PackedScene" uid="uid://d0bljtuk2iudq" path="res://Scenes/player_character.tscn" id="3_8gbba"]
 [ext_resource type="Script" uid="uid://c140if2kskbde" path="res://Scripts/camera_2d.gd" id="4_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://ncwl4gyea65x" path="res://Scenes/background.tscn" id="4_kry3j"]
+[ext_resource type="AudioStream" uid="uid://bbsshjpvvtam6" path="res://Sound/sleepwalk station cut ver.mp3" id="5_kry3j"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_kry3j")
+
+[node name="Background" parent="." instance=ExtResource("4_kry3j")]
+position = Vector2(835, -60)
+scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -15,3 +21,8 @@ script = ExtResource("4_jjvhh")
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_8gbba")]
 position = Vector2(60, 370)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_kry3j")
+volume_db = -6.7
+autoplay = true

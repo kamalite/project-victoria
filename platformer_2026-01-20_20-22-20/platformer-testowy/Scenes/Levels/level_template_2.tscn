@@ -260,19 +260,19 @@ scale = Vector2(0.62117994, 0.24066843)
 
 [node name="ControlPanel" parent="." instance=ExtResource("6_7nwqi")]
 position = Vector2(47, 65)
-ControlPannelNumber = 6
+ControlPannelNumber = 9
 
 [node name="ControlPanel2" parent="." instance=ExtResource("6_7nwqi")]
 position = Vector2(402, 384)
-ControlPannelNumber = 8
+ControlPannelNumber = 10
 
 [node name="LaserDoor" parent="." instance=ExtResource("7_08ove")]
 position = Vector2(752, 336)
-DoorNumber = 8
+DoorNumber = 10
 
 [node name="LaserSpikes6" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(192, 211)
-SpikesNumber = 6
+SpikesNumber = 9
 
 [node name="LaserSpikes11" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(666, 48)
@@ -335,11 +335,11 @@ SpikesNumber = 67
 
 [node name="LaserSpikes15" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(560, 384)
-SpikesNumber = 8
+SpikesNumber = 10
 
 [node name="LaserSpikes16" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(592, 384)
-SpikesNumber = 8
+SpikesNumber = 10
 
 [node name="LaserSpikes17" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(624, 384)
@@ -347,11 +347,11 @@ SpikesNumber = 67
 
 [node name="LaserSpikes18" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(656, 384)
-SpikesNumber = 8
+SpikesNumber = 10
 
 [node name="LaserSpikes19" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(688, 384)
-SpikesNumber = 8
+SpikesNumber = 10
 
 [node name="LaserSpikes20" parent="." instance=ExtResource("4_xfvhe")]
 position = Vector2(720, 384)

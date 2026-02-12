@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2l8ky2qqy52w"]
+
+[ext_resource type="Texture2D" uid="uid://bjg0cvumnoy1a" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/1.png" id="1_ju84e"]
+[ext_resource type="Texture2D" uid="uid://kugakm0jpct4" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/2.png" id="2_64pqy"]
+[ext_resource type="Texture2D" uid="uid://db6uhyr0wevta" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/3.png" id="3_b71ej"]
+[ext_resource type="Texture2D" uid="uid://7mje6xyygc6n" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/4.png" id="4_vv3o7"]
+[ext_resource type="Texture2D" uid="uid://c8t7tpxg2332p" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/5.png" id="5_cp2be"]
+[ext_resource type="Texture2D" uid="uid://ch1gwfqyndii2" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 6/6.png" id="6_fmman"]
+
+[node name="Background2" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("1_ju84e")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+autoscroll = Vector2(-7, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D2"]
+texture = ExtResource("2_64pqy")
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+autoscroll = Vector2(-14, 0)
+repeat_times = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("3_b71ej")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("4_vv3o7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3/Sprite2D3"]
+texture = ExtResource("5_cp2be")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+autoscroll = Vector2(-25, 0)
+repeat_times = 2
+
+[node name="Sprite2D4" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("6_fmman")

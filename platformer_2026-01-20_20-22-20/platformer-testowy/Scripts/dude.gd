@@ -5,10 +5,12 @@ extends CharacterBody2D
 @onready var jump_player = $JumpAudio
 @onready var respawn_audio = $RespawnAudio
 @onready var death_audio = $DeathAudio
+@onready var CoyoteTime: Timer = $CoyoteTime
 
 @export var SPEED = 300.0
 @export var JUMP_VELOCITY = -400.0
 var can_control: bool = true
+var coyote_time_activated: bool = false
 
 func _ready() -> void:
 	Events.gravity_up.connect(rotate_character_up)
@@ -23,10 +25,21 @@ func _physics_process(delta: float) -> void:
 	
 	velocity += get_gravity() * delta
 	
+	if is_on_floor():
+		if coyote_time_activated:
+			coyote_time_activated = false
+			CoyoteTime.stop()
+	else:
+		if !coyote_time_activated:
+			CoyoteTime.start()
+			coyote_time_activated = true
+	
 	if Input.is_action_just_released("ui_accept") and velocity.y < 0:
 		velocity.y = JUMP_VELOCITY / 4
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and (!CoyoteTime.is_stopped() or is_on_floor()):
 		velocity.y = JUMP_VELOCITY
+		CoyoteTime.stop()
+		coyote_time_activated = true
 		animated_sprite.play("Jump")
 		jump_player.play()
 	elif animated_sprite.animation == "Jump" and is_on_floor():
@@ -45,6 +58,7 @@ func _physics_process(delta: float) -> void:
 			animated_sprite.play("Jump")
 	elif animated_sprite.animation == "Run":
 		animated_sprite.play("Idle")
+		
 	
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
@@ -68,9 +82,6 @@ func handle_footsteps_audio():
 		else:
 			if footsteps_player.playing:
 				footsteps_player.stop()
-	else:
-		if footsteps_player.playing:
-			footsteps_player.stop()
 		
 func death() -> void:
 	can_control = false
