@@ -241,10 +241,12 @@ position = Vector2(49, 257)
 SpikesNumber = 1
 
 [node name="LaserDoor" parent="." instance=ExtResource("5_ffsij")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(16, 336)
 DoorNumber = 7
 
 [node name="ControlPanel" parent="." instance=ExtResource("6_t5r5x")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(480, 256)
 ControlPannelNumber = 7
 
@@ -271,9 +273,10 @@ position = Vector2(129, 257)
 SpikesNumber = 1
 
 [node name="LaserSpikes8" parent="." instance=ExtResource("4_ffsij")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(417, 288)
 rotation = 4.712389
-SpikesNumber = 1
+SpikesNumber = 7
 
 [node name="checkpoint2" parent="." instance=ExtResource("3_7arrn")]
 position = Vector2(223, 240.2907)
