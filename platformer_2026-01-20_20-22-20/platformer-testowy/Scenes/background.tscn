@@ -38,7 +38,6 @@ shader_parameter/density = 0.25
 shader_parameter/speed = Vector2(0.02, 0.01)
 
 [node name="Background" type="Node2D"]
-position = Vector2(690, 415)
 
 [node name="Parallax2D5" type="Parallax2D" parent="."]
 scroll_offset = Vector2(-134, -5)

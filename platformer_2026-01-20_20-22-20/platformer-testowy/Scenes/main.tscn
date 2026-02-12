@@ -20,7 +20,12 @@ position_smoothing_enabled = true
 script = ExtResource("4_jjvhh")
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_8gbba")]
-position = Vector2(60, 370)
+position = Vector2(90, 370)
+SPEED = 300.0
+JUMP_VELOCITY = -400.0
+
+[node name="StartingPosition" type="Marker2D" parent="."]
+position = Vector2(90, 370)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_kry3j")

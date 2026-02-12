@@ -8,6 +8,7 @@ var Lvl5 = preload("res://Scenes/Levels/level_template_8.tscn")
 var Lvl6 = preload("res://Scenes/Levels/level_template_6.tscn")
 var Lvl7 = preload("res://Scenes/Levels/level_template_7.tscn")
 var Lvl8 = preload("res://Scenes/Levels/level_template_2.tscn")
+var LvlFin = preload("res://Scenes/Levels/level_template.tscn")
 var instance1 = Lvl1.instantiate()
 var instance2 = Lvl2.instantiate()
 var instance3 = Lvl3.instantiate()
@@ -16,14 +17,18 @@ var instance5 = Lvl5.instantiate()
 var instance6 = Lvl6.instantiate()
 var instance7 = Lvl7.instantiate()
 var instance8 = Lvl8.instantiate()
+var instance9 = LvlFin.instantiate()
 var SpawnRight = Vector2(768, 0)
 var SpawnDown = Vector2(0, 432)
 var SpawnLeft = Vector2(-768, 0)
 var SpawnUp = Vector2(0, -432)
 
 func _ready() -> void:
+	spawn_rooms()
 	
-	add_child(instance1)
+func spawn_rooms() -> void:
+	var FirstRoom = instance1
+	add_child(FirstRoom)
 	var SecondRoom = instance2
 	add_child(SecondRoom)
 	SecondRoom.global_position = instance1.global_position + SpawnRight
@@ -45,5 +50,9 @@ func _ready() -> void:
 	var EighthRoom = instance8
 	add_child(EighthRoom)
 	EighthRoom.global_position = SeventhRoom.global_position + SpawnRight
+	var FinalRoom = instance9
+	add_child(FinalRoom)
+	FinalRoom.global_position = EighthRoom.global_position + SpawnRight
+	
 func _process(_delta: float) -> void:
 	pass
