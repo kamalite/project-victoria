@@ -21,10 +21,10 @@ texture = ExtResource("2_1ehe0")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.071590275
-anchor_top = 0.34064198
-anchor_right = 0.14648522
-anchor_bottom = 0.42746913
+anchor_left = 0.041208338
+anchor_top = 0.4178025
+anchor_right = 0.11610328
+anchor_bottom = 0.5493827
 offset_left = -0.47200394
 offset_top = -12.736008
 offset_right = 8.0
@@ -44,6 +44,12 @@ theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
 theme_override_fonts/font = ExtResource("3_1ehe0")
 text = "Opcje"
 
+[node name="Twórcy gry" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
+theme_override_fonts/font = ExtResource("3_1ehe0")
+text = "Twórcy gry"
+
 [node name="Wyjdź" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
@@ -52,4 +58,5 @@ text = "Wyjdź"
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Opcje" to="." method="_on_opcje_pressed"]
+[connection signal="pressed" from="VBoxContainer/Twórcy gry" to="." method="_on_twórcy_gry_pressed"]
 [connection signal="pressed" from="VBoxContainer/Wyjdź" to="." method="_on_wyjdź_pressed"]

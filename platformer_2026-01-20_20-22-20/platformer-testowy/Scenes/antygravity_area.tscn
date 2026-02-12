@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cav3aoalxsxr1" path="res://icon.svg" id="2_gy1bb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tkk28"]
-size = Vector2(127.99988, 128.00002)
+size = Vector2(125.70372, 127.34284)
 
 [node name="AntygravityArea" type="Node2D"]
 script = ExtResource("1_gy1bb")

@@ -14,3 +14,6 @@ func _on_opcje_pressed() -> void:
 
 func _on_wyjdź_pressed() -> void:
 	get_tree().quit()
+
+func _on_twórcy_gry_pressed() -> void:
+	pass # Replace with function body.
