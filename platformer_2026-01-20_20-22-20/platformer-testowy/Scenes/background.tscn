@@ -43,7 +43,7 @@ position = Vector2(690, 415)
 [node name="Parallax2D5" type="Parallax2D" parent="."]
 scroll_offset = Vector2(-134, -5)
 repeat_size = Vector2(576, 0)
-repeat_times = 2
+repeat_times = 4
 
 [node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5"]
 position = Vector2(0, -268)
@@ -56,7 +56,7 @@ texture = ExtResource("1_owiv4")
 scroll_offset = Vector2(-134, -5)
 repeat_size = Vector2(576, 0)
 autoscroll = Vector2(-6, 0)
-repeat_times = 2
+repeat_times = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D7"]
 texture = ExtResource("3_yfwmw")
@@ -69,7 +69,7 @@ texture = ExtResource("2_84a6y")
 scroll_offset = Vector2(-134, -5)
 repeat_size = Vector2(576, 0)
 autoscroll = Vector2(-10, 0)
-repeat_times = 2
+repeat_times = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D8"]
 position = Vector2(4, -260)
@@ -82,7 +82,7 @@ texture = ExtResource("3_fkdu8")
 scroll_offset = Vector2(-134, -102)
 repeat_size = Vector2(576, 0)
 autoscroll = Vector2(-18, 0)
-repeat_times = 2
+repeat_times = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
 texture = ExtResource("4_kx0mk")
@@ -91,7 +91,7 @@ texture = ExtResource("4_kx0mk")
 scroll_offset = Vector2(-35, 116)
 repeat_size = Vector2(512, 0)
 autoscroll = Vector2(-4, 0)
-repeat_times = 2
+repeat_times = 4
 ignore_camera_scroll = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="Parallax2D2"]
@@ -110,7 +110,7 @@ texture = ExtResource("5_84a6y")
 scroll_offset = Vector2(-35, 116)
 repeat_size = Vector2(512, 0)
 autoscroll = Vector2(-12, 0)
-repeat_times = 2
+repeat_times = 4
 ignore_camera_scroll = true
 
 [node name="Sprite2D4" type="Sprite2D" parent="Parallax2D3"]
@@ -129,7 +129,7 @@ texture = ExtResource("9_237w7")
 scroll_offset = Vector2(-35, 116)
 repeat_size = Vector2(512, 0)
 autoscroll = Vector2(-20, 0)
-repeat_times = 2
+repeat_times = 4
 ignore_camera_scroll = true
 
 [node name="Sprite2D8" type="Sprite2D" parent="Parallax2D4"]
