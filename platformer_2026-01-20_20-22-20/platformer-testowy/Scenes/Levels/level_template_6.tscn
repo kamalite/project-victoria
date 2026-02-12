@@ -239,8 +239,8 @@ position = Vector2(76, 271)
 scale = Vector2(0.2616206, 0.8610283)
 
 [node name="AntygravityField" parent="AntygravityArea3" index="0"]
-position = Vector2(-47.779106, -66.780624)
-scale = Vector2(1.8813026, 2.0778205)
+position = Vector2(-47.779106, -43.552578)
+scale = Vector2(1.8813026, 1.8600577)
 
 [node name="AntygravityFieldCollision" parent="AntygravityArea3/AntygravityField/AntygravityArea2D" index="0"]
 position = Vector2(1.1480713, 0)
