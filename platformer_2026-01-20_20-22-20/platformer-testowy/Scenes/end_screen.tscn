@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctkya3cvuxsie"]
+[gd_scene load_steps=5 format=3 uid="uid://ctkya3cvuxsie"]
 
 [ext_resource type="Script" uid="uid://cucitexxxpbfx" path="res://Scripts/end_screen.gd" id="1_1gwaw"]
 [ext_resource type="FontFile" uid="uid://dy8avuys2cwye" path="res://Fonts/DIN Bold.otf" id="1_f2mtv"]
+[ext_resource type="Texture2D" uid="uid://xbb7egofby2m" path="res://Assets/PO.png" id="2_gdxnu"]
 [ext_resource type="AudioStream" uid="uid://chrvnf2b1qr5n" path="res://Sound/victory-tf2.mp3" id="3_bhpww"]
 
 [node name="EndScreen" type="Control"]
@@ -16,6 +17,7 @@ script = ExtResource("1_1gwaw")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(576, 323.99997)
 scale = Vector2(0.44999996, 0.44999996)
+texture = ExtResource("2_gdxnu")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -25,20 +27,20 @@ anchor_top = 0.4178025
 anchor_right = 0.11610328
 anchor_bottom = 0.5493827
 offset_left = -0.47200394
-offset_top = -12.736008
+offset_top = -30.736023
 offset_right = 8.0
-offset_bottom = 32.0
+offset_bottom = 20.66217
 scale = Vector2(2.7018197, 2.7018197)
 
 [node name="Twórcy gry" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
+theme_override_colors/font_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
 theme_override_fonts/font = ExtResource("1_f2mtv")
 text = "Twórcy gry"
 
 [node name="Wyjdź" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.78431374, 0.41960785, 1)
+theme_override_colors/font_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
 theme_override_fonts/font = ExtResource("1_f2mtv")
 text = "Wyjdź"
 
