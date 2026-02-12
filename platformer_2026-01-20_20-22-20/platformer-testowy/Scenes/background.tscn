@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://ncwl4gyea65x"]
+[gd_scene load_steps=24 format=3 uid="uid://ncwl4gyea65x"]
 
 [ext_resource type="Texture2D" uid="uid://dg0a5sstj6j2s" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 4/1.png" id="1_84a6y"]
 [ext_resource type="Texture2D" uid="uid://uh40jai05hbc" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 7/1.png" id="1_owiv4"]
@@ -19,8 +19,26 @@
 [ext_resource type="Texture2D" uid="uid://dysb1byukbb03" path="res://Assets/Free Pixel Art Futuristic City/PNG/7-backround.png" id="11_slbr4"]
 [ext_resource type="Texture2D" uid="uid://crxy7uuqoctqq" path="res://Assets/Free Pixel Art Futuristic City/PNG/8-backround.png" id="12_l0guq"]
 [ext_resource type="Texture2D" uid="uid://phc4hsxmcpb5" path="res://Assets/Free Pixel Art Futuristic City/PNG/12-middleground.png" id="13_jxjft"]
+[ext_resource type="Shader" uid="uid://2u4pytreaa00" path="res://shaders/fog.gdshader" id="20_yfwmw"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_yfwmw"]
+frequency = 0.0075
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_237w7"]
+width = 760
+height = 430
+noise = SubResource("FastNoiseLite_yfwmw")
+seamless = true
+seamless_blend_skirt = 0.75
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hr31u"]
+shader = ExtResource("20_yfwmw")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_237w7")
+shader_parameter/density = 0.25
+shader_parameter/speed = Vector2(0.02, 0.01)
 
 [node name="Background" type="Node2D"]
+position = Vector2(690, 415)
 
 [node name="Parallax2D5" type="Parallax2D" parent="."]
 scroll_offset = Vector2(-134, -5)
@@ -125,3 +143,15 @@ texture = ExtResource("12_l0guq")
 
 [node name="Sprite2D10" type="Sprite2D" parent="Parallax2D4"]
 texture = ExtResource("13_jxjft")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = 2
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(760, 430)
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer"]
+material = SubResource("ShaderMaterial_hr31u")
+offset_right = 760.0
+offset_bottom = 430.0
