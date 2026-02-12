@@ -235,51 +235,60 @@ scale = Vector2(0.99999994, 0.99999994)
 [node name="LaserDoor" parent="." instance=ExtResource("4_r33bk")]
 position = Vector2(608, 16)
 rotation = 1.5707961
-DoorNumber = 3
+DoorNumber = 4
 
 [node name="ControlPanel" parent="." instance=ExtResource("5_h48ve")]
 position = Vector2(116, 288)
-ControlPannelNumber = 3
+ControlPannelNumber = 4
 
 [node name="LaserSpikes" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(176, 177)
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes2" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(272, 177)
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes3" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(220, 384)
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes4" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(188, 384)
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes7" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(190, 320.00003)
 rotation = 1.5691817
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes8" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(352.00003, 288)
 rotation = -1.5714083
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes5" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(561, 47.999992)
 rotation = 3.1404216
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="LaserSpikes6" parent="." instance=ExtResource("6_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(624, 145)
 rotation = -1.5707964
-SpikesNumber = 7
+SpikesNumber = 3
 
 [node name="ControlPanel2" parent="." instance=ExtResource("5_h48ve")]
+modulate = Color(1, 1, 0.39215687, 1)
 position = Vector2(720, 176)
-ControlPannelNumber = 7
+ControlPannelNumber = 3
 
 [node name="checkpoint" parent="." instance=ExtResource("7_mpifh")]
 position = Vector2(14.436507, 127.92529)

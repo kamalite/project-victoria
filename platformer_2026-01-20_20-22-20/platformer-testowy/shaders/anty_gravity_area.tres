@@ -3,7 +3,7 @@
 [ext_resource type="Shader" uid="uid://cuiyc6k12e5jp" path="res://shaders/anty_gravity_area.gdshader" id="1_hgbfk"]
 
 [sub_resource type="Gradient" id="Gradient_3w73k"]
-colors = PackedColorArray(0, 0.4392157, 1, 0.39215687, 0, 1, 1, 0.39215687)
+colors = PackedColorArray(0.015686275, 0.7490196, 0.33333334, 0.7058824, 0.006871447, 0.44402373, 0.1864002, 0.39215687)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_3w73k"]
 
